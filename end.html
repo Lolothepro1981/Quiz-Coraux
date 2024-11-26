@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Correction de l'attribut viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Correctement écrit et normalisé -->
+    <title>Congrats</title>
+    <link rel="stylesheet" href="HomePage.css"> <!-- Le lien CSS doit être dans le <head> -->
+</head>
+<body>
+    <div class="container"> <!-- Correction de l'attribut class -->
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Username"> <!-- Fermeture correcte de la balise input -->
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save
+                </button> <!-- Correction du nom de fonction -->
+            </form>
+            <a class="btn" href="HomePage.html">Play Again</a>
+            <a class="btn" href="/">Go Home</a>
+        </div>
+    </div>
+    <script src="end.js"></script> <!-- Position du script en bas pour un meilleur chargement -->
+</body>
+</html>
